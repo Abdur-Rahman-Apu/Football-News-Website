@@ -1,0 +1,952 @@
+/******************************************************************************************* 
+                                        GOOGLE FONTS
+*********************************************************************************************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+/******************************************************************************************* 
+                                        VARIABLES
+*********************************************************************************************/
+
+:root {
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Roboto', sans-serif;
+
+}
+
+
+/******************************************************************************************* 
+                                    COMMON STYLES
+ *********************************************************************************************/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/******************************************************************************************* 
+                                    HEADER PART START
+*********************************************************************************************/
+
+header {
+    background-color: #161616;
+    color: white;
+    width: 84%;
+    margin: 50px auto 130px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+
+.header-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.header-info {
+    width: 50%;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 20px 10px 0px 79px;
+}
+
+.header-title h1 {
+    font-family: var(--font1);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 10px;
+}
+
+.header-message p {
+    font-family: var(--font1);
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+.fifa-text-color {
+    color: #FFCC00;
+}
+
+.qatar-color {
+    color: #FFCC99;
+}
+
+.date-color {
+    color: #FF9933;
+}
+
+.watch-now-btn {
+    position: relative;
+    background-color: #0099cc;
+    border-radius: 5px;
+    padding: 12px 25px;
+    border: none;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.watch-now-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+/********************************************************************************************* 
+                                        BUTTON ANIMATION
+ *********************************************************************************************/
+
+.watch-now-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.watch-now-btn:hover a span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animate1 2s linear infinite;
+}
+
+.watch-now-btn:hover a span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.1s;
+}
+
+.watch-now-btn:hover a span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animate3 2s linear infinite;
+}
+
+.watch-now-btn:hover a span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 0.1s;
+}
+
+
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+.greater-than {
+    margin-left: 10px;
+    color: white;
+}
+
+.header-banner {
+    height: 100%;
+}
+
+.header-banner img {
+    margin-top: 50px;
+    width: 100%;
+    height: 90%;
+}
+
+
+/******************************************************************************************* 
+                                        HEADER PART END
+*********************************************************************************************/
+
+
+/******************************************************************************************* 
+                                        MAIN SECTION START
+*********************************************************************************************/
+
+
+.news {
+    display: flex;
+    margin: 0 100px;
+}
+
+/******************************************************************************************* 
+                                            SIDEBAR
+*********************************************************************************************/
+
+.side-bar {
+    width: 240px;
+    height: 255px;
+    background-color: #161616;
+    margin-right: 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.side-bar button {
+    width: 190px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.side-bar button a {
+    text-decoration: none;
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 14px;
+    color: #161616;
+
+}
+
+.side-bar .active {
+    background-color: #9BD1FA;
+
+}
+
+.side-bar .active a {
+    color: black;
+}
+
+
+
+/******************************************************************************************* 
+                                            BLOGS PART
+*********************************************************************************************/
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blog {
+    width: 250px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+}
+
+.blog-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blog .country-flag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.country-flag h2 {
+    font-family: var(--font1);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.country-1,
+.country-2 {
+    width: 30%;
+}
+
+.blog .country-flag .country-1 img,
+.blog .country-flag .country-2 img {
+    width: 100%;
+}
+
+.blog-title h2 {
+    font-family: var(--font1);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.match-time p {
+    margin-top: 0;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 12px;
+    color: #4D4D4D;
+}
+
+.view-all-btn {
+    display: none;
+    width: 400px;
+    height: auto;
+}
+
+/******************************************************************************************* 
+                                        MAIN PART END
+*********************************************************************************************/
+
+
+/******************************************************************************************* 
+                                    FOOTER PART START
+*********************************************************************************************/
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #161616;
+    color: white;
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.footer-title {
+    margin-bottom: 12px;
+}
+
+footer hr {
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.footer-menu {
+    margin-bottom: 35px;
+}
+
+footer .footer-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 45px;
+    color: #B9B9B9;
+}
+
+.social-media a {
+    font-size: 18px;
+    color: white;
+
+}
+
+.social-media :not(:last-child) {
+    margin-right: 25px;
+}
+
+.fb-icon:hover i {
+    transition: all 1s;
+    color: #4267B2;
+}
+
+.twitter-icon:hover i {
+    transition: all 1s;
+    color: #1DA1F2;
+}
+
+.youtube-icon:hover i {
+    transition: all 1s;
+    color: red;
+}
+
+
+
+/******************************************************************************************* 
+                                    FOOTER PART END
+*********************************************************************************************/
+
+
+/******************************************************************************************* 
+                                    MEDIA QUERY START
+*********************************************************************************************/
+
+
+/******************************************************************************************* 
+                                   RESPONSIVE DESIGN FOR MOBILE
+*********************************************************************************************/
+
+
+
+@media screen and (max-width: 420px) {
+    header {
+        height: auto;
+        margin: 50px auto 10px
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-info {
+        width: 100%;
+        padding: 30px 10px 0px 14px;
+    }
+
+    .header-title h1 {
+        font-size: 26px;
+        line-height: 50px;
+    }
+
+    .header-message p {
+        font-size: 8px;
+    }
+
+    .watch-now-btn {
+        display: block;
+        margin: 30px auto;
+    }
+
+    .watch-now-btn a,
+    .greater-than {
+        font-size: 12px;
+    }
+
+    .header-banner img {
+        margin-left: 30px;
+        margin-bottom: -4px;
+        width: 80%;
+    }
+
+    /******************************************************************************************* 
+                                    MAIN PART
+    *********************************************************************************************/
+    
+    .news {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 60px;
+    }
+
+    /******************************************************************************************* 
+                                    SIDEBAR PART 
+    *********************************************************************************************/
+    
+    .side-bar {
+        background-color: #fff;
+    }
+
+    .side-bar button {
+        width: auto;
+        border: 1px solid gray;
+        background-color: white;
+        padding: 10px 40px;
+    }
+
+    .side-bar button a {
+
+        font-size: 14px;
+
+    }
+
+    .side-bar .active {
+        width: auto;
+        padding: 10px 40px;
+
+    }
+
+    .side-bar .last-btn {
+        padding: 10px 60px;
+    }
+
+
+    /******************************************************************************************* 
+                                    BLOGS PART 
+    *********************************************************************************************/
+
+   
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .blog-button {
+        background-color: white;
+        font-size: 16px;
+    }
+
+    .blog-message p {
+        font-size: 14px;
+    }
+
+    .duration-message span {
+        font-size: 14px;
+    }
+
+    .duration-message .duration-message-icon {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    /******************************************************************************************* 
+                                    FOOTER PART 
+    *********************************************************************************************/
+    
+
+    footer {
+        height: 500px;
+        justify-content: space-evenly;
+    }
+
+    footer h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    footer hr {
+        margin-bottom: 0px;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    footer .footer-menu a {
+        margin-right: 0;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 480px) {
+
+    /******************************************************************************************* 
+                                    HEADER PART 
+    *********************************************************************************************/  
+    
+
+    header {
+        height: auto;
+        margin: 50px auto 10px
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-info {
+        width: 100%;
+        padding: 30px 10px 0px 14px;
+    }
+
+    .header-title h1 {
+        font-size: 31px;
+        line-height: 50px;
+    }
+
+    .header-message p {
+        font-size: 11px;
+    }
+
+    .watch-now-btn {
+        display: block;
+        margin: 30px auto;
+    }
+
+    .watch-now-btn a,
+    .greater-than {
+        font-size: 25px;
+    }
+
+    .header-banner img{
+        margin-bottom: -4px;
+    }
+
+    
+    /******************************************************************************************* 
+                                    MAIN PART 
+    *********************************************************************************************/
+   
+    .news {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 60px;
+    }
+
+
+    /******************************************************************************************* 
+                                    SIDEBAR PART 
+    *********************************************************************************************/
+    
+    .side-bar {
+        background-color: #fff;
+    }
+
+    .side-bar button {
+        width: auto;
+        border: 1px solid gray;
+        background-color: white;
+        padding: 10px 40px;
+    }
+
+    .side-bar button a {
+
+        font-size: 14px;
+
+    }
+
+    .side-bar .active {
+        width: auto;
+        padding: 10px 40px;
+
+    }
+
+    .side-bar .last-btn {
+        padding: 10px 60px;
+    }
+
+    /******************************************************************************************* 
+                                    BLOGS PART 
+    *********************************************************************************************/
+    
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .blog-button {
+        background-color: white;
+        font-size: 16px;
+    }
+
+    .blog-message p {
+        font-size: 18px;
+    }
+
+    .duration-message span {
+        font-size: 16px;
+    }
+
+    .duration-message .duration-message-icon {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+
+    /******************************************************************************************* 
+                                    FOOTER PART 
+    *********************************************************************************************/
+    
+
+    footer {
+        height: 500px;
+    }
+
+
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    footer .footer-menu a {
+        margin-right: 0;
+        margin-top: 18px;
+    }
+}
+
+
+
+
+/******************************************************************************************* 
+                                    RESPONSIVE DESIGN FOR TABLET
+*********************************************************************************************/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        height: auto;
+        margin: 50px auto 50px;
+    }
+
+    .header-info {
+        width: 100%;
+        padding: 30px 10px 0px 44px;
+    }
+
+    .header-title h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .header-message p {
+        font-size: 9px;
+    }
+
+    .watch-now-btn {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .watch-now-btn a,
+    .greater-than {
+        font-size: 20px;
+    }
+
+    .header-banner img {
+        width: auto;
+        margin-top: 40px;
+        margin-bottom: -4px;
+        
+    }
+
+     /******************************************************************************************* 
+                                    MAIN PART 
+    *********************************************************************************************/  
+    .news {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 60px;
+    }
+
+    /******************************************************************************************* 
+                                    SIDEBAR PART 
+    *********************************************************************************************/
+    
+    .side-bar {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #fff;
+        width: 95%;
+        height: 100px;
+        column-gap: 30px;
+    }
+
+    .side-bar button {
+        border: 1px solid gray;
+        background-color: white;
+        width: auto;
+        padding: 10px 30px;
+    }
+
+    .side-bar button a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .side-bar .active a {
+        padding: 0;
+    }
+
+    /******************************************************************************************* 
+                                            BLOGS PART 
+    *********************************************************************************************/
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .blog-button {
+        background-color: white;
+        font-size: 16px;
+    }
+
+    .blog-message p {
+        font-size: 17px;
+    }
+
+    .duration-message span {
+        font-size: 16px;
+    }
+
+    .duration-message .duration-message-icon {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .view-all-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .view-all-btn button {
+        border: none;
+        border-radius: 5px;
+        background-color: #0099cc;
+    }
+
+    .view-all-btn a {
+        display: inline-block;
+        text-decoration: none;
+        font-family: var(--font1);
+        font-weight: 600;
+        color: white;
+        padding: 5px 20px;
+    }
+
+    /******************************************************************************************* 
+                                    FOOTER PART 
+    *********************************************************************************************/
+
+    footer {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    .footer-menu {
+        margin: 0 auto 35px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    footer .footer-menu a {
+        margin-right: 30px;
+        margin-top: 18px;
+    }
+}
+
+/******************************************************************************************* 
+                                RESPONSIVE DESIGN FOR LAPTOP
+*********************************************************************************************/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+
+    .header-info {
+        padding: 90px 10px 0px 79px;
+    }
+
+    .header-title h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .header-message p {
+        font-size: 10px;
+    }
+
+
+    /******************************************************************************************* 
+                                    MAIN PART 
+    *********************************************************************************************/
+
+    .news {
+        display: flex;
+        margin: 0px 60px;
+        justify-content: space-evenly
+    }
+
+    .side-bar button {
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .side-bar .active a {
+        padding: 0;
+    }
+
+    .blog {
+        width: 220px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/******************************************************************************************* 
+                                            END
+*********************************************************************************************/
